@@ -1,0 +1,10 @@
+.ipynb_checkpoints/
+*.pyc
+# pixi environments
+.pixi
+*.egg-info
+
+# pixi environments
+.pixi
+*.egg-info
+data

@@ -1,0 +1,56 @@
+[project]
+authors = ["Rahul Dave <rahuldave@gmail.com>"]
+channels = ["pytorch", "conda-forge"]
+description = "Add a short description here"
+name = "mlp-pytorch-hw"
+platforms = ["osx-arm64", "win-64", "linux-64", "osx-64"]
+version = "0.1.0"
+
+[tasks]
+
+[dependencies]
+python = "3.11.*"
+
+[target.win-64.dependencies]
+python = "3.11.*"
+numpy = "1.26.*"
+matplotlib = ">=3.9.1,<4"
+scipy = ">=1.14.1,<2"
+pandas = ">=2.2.3,<3"
+scikit-learn = ">=1.5.2,<2"
+jupyterlab = ">=4.2.5,<5"
+pytorch = ">=2.2.2,<3"
+torchvision = ">=0.17.2,<0.21"
+cpuonly = ">=2.0,<3"
+
+[target.linux-64.dependencies]
+python = "3.11.*"
+numpy = "1.26.*"
+matplotlib = ">=3.9.1,<4"
+scipy = ">=1.14.1,<2"
+pandas = ">=2.2.3,<3"
+scikit-learn = ">=1.5.2,<2"
+jupyterlab = ">=4.2.5,<5"
+pytorch = ">=2.2.2,<3"
+torchvision = ">=0.17.2,<0.21"
+
+[target.osx-64.dependencies]
+python = "3.11.*"
+numpy = "1.26.*"
+matplotlib = ">=3.9.1,<4"
+scipy = ">=1.14.1,<2"
+pandas = ">=2.2.3,<3"
+scikit-learn = ">=1.5.2,<2"
+jupyterlab = ">=4.2.5,<5"
+pytorch = ">=2.2.2,<3"
+torchvision = ">=0.17.2,<0.21"
+
+[target.osx-arm64.dependencies]
+numpy = "1.26.*"
+matplotlib = ">=3.9.1,<4"
+scipy = ">=1.14.1,<2"
+pandas = ">=2.2.3,<3"
+scikit-learn = ">=1.5.2,<2"
+jupyterlab = ">=4.2.5,<5"
+pytorch = ">=2.2.2,<3"
+torchvision = ">=0.17.2,<0.21"
